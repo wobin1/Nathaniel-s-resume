@@ -1,107 +1,196 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>Nathaniel Dauda Musa</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resume | Bootstrap 5 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,800&amp;display=swap">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
   </head>
-  <body>
-   
-    <div class="container">
-      <div class="row">
-      <div class="col-4">
-
-        <div class="profile_image">
-          <img
-          src="img.jpg"
-          class="img-thumbnail"
-          style="width: 150px;"
-
-          alt=""
-        />
+  <body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="img/favicon.png" alt="" width="55"></a>
+          <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link text-uppercase active" href="#hero">Home <span class="sr-only">(current)</span></a></li>
+              
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#expertise">Expertise</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#education">Education</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        <h1 class="name">Nathaniel Dauda Musa</h1>
-
-        <div class="contact">
-          <h3 class="contact_heading">Contact Information</h3>
-          <p>Abuja</p>
-          <p>08144169123</p>
-          <p>nathanielmusa3@gmail.com</p>
-        </div>
-
-        <div class="skills">
-          <h3 class="skills_heading">Skills</h3>
-          <p>Html, Css and Bootstrap</p>
-          <p>SQL</p>
-          <p>Python Flask</p>
-          <p>Flutter</p>
+      </nav>
+    </header>
+    <!-- Hero Section-->
+    <section class="hero bg-cover bg-center py-5" id="hero" style="background: url(img/wobin-dark.png)">
+      <div class="container py-5 my-5 z-index-20 position-relative">
+        <div class="row py-lg-5 mt-5">
+          <div class="col-md-8 text-white">
+            <h2 class="h4 text-primary fw-normal mb-0">Hi, I am</h2>
+            <h1 class="text-uppercase text-xl mb-0">Nathaniel <span class="text-primary">Musa</span></h1>
+            <h2 class="h4 fw-normal mb-5">Software Developer</h2>
+            <p class="text-shadow">Over a year of experience in Software Development, Excellent reputation for solving problems is what I am known for.</p>
+          </div>
         </div>
       </div>
-
-      <div class="col-1" style="margin-top: 110px;">
-        
-        <img
-          src="work.png"
-          class="img-thumbnail"
-          style="height: 32px;"
-
-          alt=""
-        />
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <img
-          src="grad.png"
-          class="img-thumbnail"
-          style="height: 32px;"
-
-          alt=""
-        />
+    </section>
+ 
+    <!-- Expertise Section        -->
+    <section class="py-5" id="expertise">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+         
+          <h2 class="text-uppercase lined">Expertise</h2>
+        </header>
+        <div class="row gy-5">
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">01</span>Backend Web Development</h3>
+            <p class="text-muted text-sm ms-4 ps-3">I build Api's for Frontend and mobile app developers using Python Flask .</p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">02</span>SQL </h3>
+            <p class="text-muted text-sm ms-4 ps-3">I Write SQL queries and managedatabases I work mostly with Postgresql but can work with any database because i have an understanding of SQL</p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">03</span>Mobile App Development</h3>
+            <p class="text-muted text-sm ms-4 ps-3">I build Mobile Applications using flutter i use setState for state management but currently working on the Bloc state management </p>
+          </div>
+          
+        </div>
       </div>
-
-
-      <div class="col-7">
-        <br>
+    </section>
+    <!-- Education Section-->
+    <section class="py-5 bg-light" id="education">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          
+          <h2 class="text-uppercase lined">Education</h2>
+        </header>
+        <!--  Timeline -->
+        <ul class="timeline">
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2013 - 2017 </p>
+                    <h2 class="h5 mb-0 text-uppercase">Bsc Physics</h2>
+                    <p class="text-sm mb-0">Kaduna State University</p><span class="small text-muted">Kaduna State</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.</p>
+                  </div>
+                </div>
+              </li>
+            
+        </ul>
+      </div>
+    </section>
+    <!-- Experience Section        -->
+    <section class="py-5" id="experience">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
        
-        <p>Over a year of experience in Software Development, Excellent reputation for solving problems</p>
-
-
-        <div>
-          <h3 class="experience_heading">Work Exerience </h3>
-          <p><strong>Developer Intern May 2021 - Nov 2021 </strong> <br>
-          Harmony Innovation Hub Abuja</p>
-
-          <ul>
-            <li>Worked with a team to build a geodatabase and a geoserver</li>
-            <li>Worked on a hub management software</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="education_heading">Education</h3>
-          <p> <strong>Bachelor's Physics</strong>   May 2013 - Dec 2017</p>
-          <p>Kaduna State University </p>
-
+          <h2 class="text-uppercase lined">Experience</h2>
+        </header>
+        <!--  Timeline -->
+        <ul class="timeline">
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">May 2021 – Nov 2021  </p>
+                    <h2 class="h5 mb-0 text-uppercase">Developer Intern</h2>
+                    <p class="text-sm mb-0">Harmony Innovation Hub</p><span class="small text-muted">Abuja</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">I worked with a team to build a geodatabase and geoserver.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Presently </p>
+                    <h2 class="h5 mb-0 text-uppercase">Personal Projects</h2>
+                    <p class="text-sm mb-0"></p><span class="small text-muted"></span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">Been Working on personal projects, I have built a Management Software for a Hub using flask, built a blog of my own using hugo and other projects, this projects can be found on my github page.</p>
+                  </div>
+                </div>
+              </li>
+             
+        </ul>
+      </div>
+    </section>
+    <!-- Education Section        -->
+    <section class="bg-light py-5" id="contact">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">Call me, maybe.</p>
+          <h2 class="text-uppercase lined">Contact</h2>
+        </header>
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="#!"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">Location</h4>
+              <p class="text-sm mb-0">Abuja, Nigeria</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="tel:08144169123"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">Phone</h4>
+              <p class="text-sm mb-0">+2348144169123</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="www.bindlearn.com"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">Personal Blog</h4>
+              <p class="text-sm mb-0">www.bindlearn.com</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="#"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">Email</h4>
+              <p class="text-sm mb-0">nathanielmusa3@gmail.com</p></a></div>
         </div>
       </div>
-    </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </section>
+    <!-- Footer-->
+    <footer class="pt-5">
+      <div class="container text-center py-5">
+        <div class="row px-4">
+          <div class="col-lg-7 mx-auto">
+            <h2 class="text-uppercase mb-0">Nathaniel Musa </h2>
+            <h6 class="text-primary text-uppercase mb-0 letter-spacing-3">Software Developer</h6>
+            <p class="text-muted my-4">Over a year of experience in Software Development, Excellent reputation for solving problems is what I am known for.</p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="social-link" href="https://web.facebook.com/nathaniel.daudamusa/"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="https://www.linkedin.com/in/nathaniel-musa-48b611189/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="https://github.com/wobin1"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights px-4">
+        <div class="container py-4 border-top text-center">
+          <p class="mb-0 text-muted py-2">&copy; All rights reserved <a href="https://bootstrapious.com/p/bootstrap-resume"></a>. </p>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </body>
 </html>
